@@ -9,7 +9,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
-@RequestMapping("/paypal")
+@RequestMapping("/paying")
 public class PayingController {
     private static final Logger log= LoggerFactory.getLogger(PayingController.class);
 

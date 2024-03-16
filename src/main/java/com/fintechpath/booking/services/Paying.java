@@ -9,9 +9,9 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestParam;
 
 
-@FeignClient(name = "feignBuy")
+@FeignClient(name = "Payment-service")
 public interface Paying
 {
-    @PostMapping(value="/paypal/pay")
+    @PostMapping("/paying/pay")
     public Response Pay(@RequestBody Body body);
 }

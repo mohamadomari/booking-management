@@ -11,7 +11,7 @@ import org.springframework.stereotype.Service;
 @Service
 public class PaymentService {
     private static final Logger log= LoggerFactory.getLogger(PaymentService.class);
-    private Paying paying;
+    private final Paying paying;
     @Autowired
     public PaymentService(Paying paying)
     {
